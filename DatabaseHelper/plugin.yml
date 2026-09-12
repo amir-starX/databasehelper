@@ -1,0 +1,17 @@
+name: DatabaseHelper
+version: 1.0.0
+author: YourName
+description: پلاگین کمکی برای ساده‌سازی کار با دیتابیس (ساخت جدول، کوئری، مدل).
+main: DatabaseHelper.php
+class: DatabaseHelper\DatabaseHelper
+requires:
+  php: ">=8.0"
+dependencies: []
+hooks:
+  - register_routes
+  - before_render
+syntax:
+  - "@db_table"
+  - "@db_query"
+  - "@db_insert"
+  - "@db_count"
